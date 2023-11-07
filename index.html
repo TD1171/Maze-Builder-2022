@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maze Runner</title>
+       
+        <script src="script.js"></script>
+       
+        <meta charset="UTF-8">
+        <style>
+        body {
+            text-align: center;
+        }
+ 
+        .cell {
+            height: 30px;
+            width: 30px;
+            border: 1.5px solid grey;
+            border-style: inset;
+        }
+ 
+        .blackcell {
+            background-color: black;
+        }
+ 
+        .whitecell {
+            background-color: white;
+        }
+    </style><style>
+            .chess-board { border-spacing: 0; border-collapse: collapse; }
+            .chess-board th { padding: .5em; }
+            .chess-board td { border: 1px solid; width: 2em; height: 2em; }
+            .chess-board .light { background: #eee; }
+            .chess-board .dark { background: #000; }
+        </style>
+         
+    </head>
+    <body>
+ 
+            <h1 class = "center" style="color: rgb(112, 218, 218);">The Maze Runner</h2>
+            <h2 style="color: orchid;"> Please input the dimensions of the maze(at least 3)</h1>
+            <input type="text" id="height">
+            <input type="text" id="width">
+     
+                    <button id="submit" >
+                        Submit
+                    </button>
+                    <button id="solution" >See Solution</button>
+       
+ 
+            <h3>Inputs</h3>
+            <h3 style="color:rgb(112, 218, 218);">The Light Blue Square is the Start</h3><h3>The Black Square is the End</h3>
+ 
+            <button class="btn btn-secondary mt-3" id="remake">
+                Remake
+            </button>
+   
+        <div>
+          <canvas id="maze" width="1000" height="1000" style=" margin: 10px; "></canvas>
+      </div>
+       
+    </body>
+</html>
